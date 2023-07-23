@@ -1,0 +1,280 @@
+/* Set line-height for the root element */
+:root {
+  line-height: 1.5;
+}
+
+/* Remove margins for specified heading elements, figures, paragraphs, and lists */
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+p,
+ol,
+ul {
+  margin: 0;
+}
+
+/* Remove list styles and inline padding for ordered and unordered lists */
+ol,
+ul {
+  list-style: none;
+  padding-inline: 0;
+}
+
+/* Inherit font-size and font-weight for specified heading elements */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Make images display as blocks and fill available width */
+img {
+  display: block;
+  min-inline-size: 100%;
+}
+
+/* Apply box-sizing to all elements, including pseudo-elements, and set background-repeat to no-repeat */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+}
+
+/* Inherit text-decoration and vertical-align for pseudo-elements */
+::before,
+::after {
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
+
+/* Vertically align specified media elements within their containers */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/* Fill SVG elements with the current color if not explicitly set */
+svg:not([fill]) {
+  fill: currentColor;
+}
+
+/* Set default font family, line-height, tab size, cursor, and word-break for the HTML document */
+html {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.15;
+  tab-size: 4;
+  cursor: default;
+  word-break: break-all;
+}
+
+/* Remove default margin for the body element */
+body {
+  margin: 0;
+}
+
+/* Hide the horizontal rule and inherit color from the parent element */
+hr {
+  height: 0;
+  color: inherit;
+}
+
+/* Underline dotted text for abbreviations with a title attribute */
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+/* Make text bold for <b> and <strong> elements */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/* Set monospace font family and font size for code-related elements */
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo,
+    monospace;
+  font-size: 1em;
+}
+
+/* Reduce font size for <small> elements */
+small {
+  font-size: 80%;
+}
+
+/* Adjust font size and line-height for subscript and superscript elements */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* Position subscript slightly below the baseline */
+sub {
+  bottom: -0.25em;
+}
+
+/* Position superscript slightly above the baseline */
+sup {
+  top: -0.5em;
+}
+
+/* Set text-indent and border color for tables, and collapse table borders */
+table {
+  text-indent: 0;
+  border-color: inherit;
+  border-collapse: collapse;
+}
+
+/* Inherit font family, font size, line-height, margin, and vertical resize behavior for form elements */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  resize: vertical;
+}
+
+/* Enable pointer interaction for specified elements */
+a,
+area,
+button,
+input,
+label,
+select,
+summary,
+textarea,
+[tabindex] {
+  touch-action: manipulation;
+}
+
+/* Set cursor to "progress" for elements with "aria-busy" attribute set to "true" */
+[aria-busy="true"] {
+  cursor: progress;
+}
+
+/* Set cursor to "pointer" for elements with "aria-controls" attribute */
+[aria-controls] {
+  cursor: pointer;
+}
+
+/* Set cursor to "default" for elements with "aria-disabled" attribute set to "true" or "disabled" attribute */
+[aria-disabled="true"],
+[disabled] {
+  cursor: default;
+}
+
+/* Make hidden elements with "aria-hidden" attribute set to "false" and "hidden" attribute visible again */
+[aria-hidden="false"][hidden] {
+  display: initial;
+}
+
+/* Make hidden elements with "aria-hidden" attribute set to "false" and "hidden" attribute not focused completely invisible */
+[aria-hidden="false"][hidden]:not(:focus) {
+  clip-path: inset(50%);
+  position: absolute;
+}
+
+/* Reduce animations and transitions for users with reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-delay: 0s !important;
+    transition-duration: 0s !important;
+  }
+}
+
+/* Remove text transformation for buttons and selects */
+button,
+select {
+  text-transform: none;
+}
+
+/* Remove default styling for Firefox focus indicator */
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/* Add a dotted outline for Firefox focus ring */
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/* Remove box shadow for invalid form elements in Firefox */
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/* Remove padding for legends in fieldsets */
+legend {
+  padding: 0;
+}
+
+/* Set vertical alignment for progress elements */
+progress {
+  vertical-align: baseline;
+}
+
+/* Allow adjusting the height of spin buttons in input elements */
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* Adjust outline offset for search input elements */
+[type="search"] {
+  outline-offset: -2px;
+}
+
+/* Inherit font for file upload button in WebKit browsers */
+::-webkit-file-upload-button {
+  font: inherit;
+}
+
+/* Display <details> summary element as a list item */
+summary {
+  display: list-item;
+}
+
+/*
+Responsive layout default sizes
+---------------------------------
+
+@media (min-width: 640px) {
+}
+@media (min-width: 768px) {	
+}
+@media (min-width: 1024px) {	
+}
+@media (min-width: 1280px) {	
+}
+@media (min-width: 1536px) {	
+}
+*/
