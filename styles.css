@@ -74,7 +74,6 @@ h1 {
 
 .navigation 
 {
-  background-color: white;
   font-size: 1.3rem;
   letter-spacing: 0.1rem;
   color: var(--grayish-blue);
@@ -94,7 +93,7 @@ h1 {
 
 .navigation li {
   color: hsl(270, 9%, 17%);
-   text-transform: uppercase;
+  text-transform: uppercase;
 
 }
 
