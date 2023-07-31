@@ -76,30 +76,23 @@ h1 {
 {
   background-color: white;
   font-size: 1.3rem;
-   letter-spacing: 0.1rem;
+  letter-spacing: 0.1rem;
   color: var(--grayish-blue);
-  width: 60%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.logo{
-  display: flex;
-  flex-direction: raw;
-}
 
-.text{
-  display: flex;
-  flex-direction: raw;
-}
 .nav-links {
   list-style-type: none;
   cursor: pointer;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.navigation li, a{
+.navigation li {
   color: hsl(270, 9%, 17%);
    text-transform: uppercase;
 
